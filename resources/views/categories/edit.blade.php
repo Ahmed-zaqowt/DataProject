@@ -26,7 +26,7 @@
     <!-- Form for editing category -->
     <form method="POST" action="{{ route('DataProject.category.update') }}">
         @csrf
-        @method('POST')
+     <input name="id" value="{{ $category->id }}" type="hidden">
 
         <div class="form-group">
             <label for="name">Category Name</label>
