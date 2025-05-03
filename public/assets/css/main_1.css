@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the form */
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Style for the link */
+a {
+
+  margin-top: 20px;
+  /* Add some space above the link */
+  text-decoration: none;
+  /* Remove underline */
+  color: #007BFF;
+  /* Set link color */
+  font-size: 16px;
+  /* Set font size */
+  font-weight: 600;
+  /* Make the text bold */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* توسيط العناصر أفقياً */
+  justify-content: center;
+  /* توسيط العناصر عمودياً */
+  text-align: center;
+}
+
+a:hover {
+  color: #0056b3;
+  /* Darker color on hover */
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+/* Title Styling */
+h2 {
+  color: #4CAF50;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form Field Styling */
+.form-group label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for input fields */
+.form-control:hover {
+  border-color: #66bb6a;
+  /* Green color on hover */
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+  /* Light green shadow on hover */
+}
+
+/* Hover effect for file input field */
+input[type="file"]:hover {
+  border-color: #66bb6a;
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+
+.form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styling */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+small {
+  color: brown;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* File Upload Styling */
+input[type="file"] {
+  padding: 3px;
+  font-size: 16px;
+}
+
+/* Custom Classes for Margin or Padding Adjustments */
+.mm {
+  margin-bottom: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .form-control,
+  .btn {
+    font-size: 14px;
+  }
+}

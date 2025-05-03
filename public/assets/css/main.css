@@ -1,0 +1,210 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Full-screen container */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    /* Adjusted to make the form/container fill more space */
+    max-width: 1200px;
+    /* Ensure it doesn't get too wide on large screens */
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+/* Page title */
+.page-title {
+    font-size: 2rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    /* Allow horizontal scroll on smaller screens */
+}
+
+.table-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table and row styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Edit form styling */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* تنسيق الـ Pagination البسيط */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .active a {
+    background-color: #28a745;
+    /* اللون الأخضر */
+    color: white;
+    font-weight: bold;
+}
+
+.pagination .disabled a {
+    background-color: #f0f0f0;
+    color: #ccc;
+    pointer-events: none;
+}
+
+/* تخصيص Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+    /* اللون الأزرق */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .active a {
+    background-color: #28a745;
+    /* اللون الأخضر */
+    color: white;
+    font-weight: bold;
+}
+
+.pagination .disabled a {
+    background-color: #f0f0f0;
+    color: #ccc;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* تنسيق الرسالة */
+.alert {
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert .close {
+    color: white;
+    font-size: 20px;
+}
